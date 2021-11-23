@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html class="html">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta name="theme-color" content="#000" />
+    <meta name="keywords" content="Rmida Ala, Rmida , Ala, electrical engineer student " />
+    <meta name="author" content="Rmida Ala" />
+    
+    <title>Rmida Ala </title>
+    <link rel="stylesheet" href="style1.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 1%;
+            overflow:hidden ;        /*------probléme au niveau de l'animation de link dans le masthead */
+           /* background: #333;*/
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: dotted;
+        }
+        
+        li a:hover {
+            background-color:#111;
+        }
+    </style>
+        
+    
+</head>
+
+<body>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul>
+        <li><a class="active" href="#home" style="font-size: medium;">Home</a></li>
+        <li><a href="#news.html" style="font-size: medium;">News</a></li>
+        <li><a href="#contact-us.html" style="font-size: medium;">Contact</a></li>
+        <li><a href="#about" style="font-size: medium;" > About</a></li>
+    </ul>
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          position: relative;
+          background: #f1f1f1f1;
+        }
+        
+        /* Slides */
+        .mySlides {
+          display: inline;
+          padding: 90px;
+          text-align: center;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position:absolute;
+          top: 30%;
+          width: auto;
+          margin-top: -30px;
+          padding: 16px;
+          color: #888;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          position: absolute;
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+          color: white;
+        }
+        
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        /* Add a background color to the active dot/circle */
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Add an italic font style to all quotes */
+        q {font-style: italic;}
+        
+        /* Add a blue color to the author */
+        .author {color: cornflowerblue;}
+    </style>
+  <div class="slideshow-container">
+
+    <div class="mySlides" style="font-size: large;">
+      <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+      <p class="author">- John Keats</p>
+    </div>
+    
+    <div class="mySlides" style="font-size: large">
+      <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+      <p class="author">- Ernest Hemingway</p>
+    </div>
+    
+    <div class="mySlides" style="font-size: large;">
+      <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+      <p class="author">- Thomas A. Edison</p>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+11    
+  
+<body class="body">
+
+    <!-- Masthead -->
+
+    <section id="masthead" class="masthead">
+        <div class="masthead-container">
+            <div class="masthead-profile-bg">
+                <div class="masthead-profile-content">
+                    <img src="IMAGE/ma_photo.jpg" alt="Customer image" class="masthead__image" />
+                    <div class="masthead-profile">
+                        <h1 class="masthead__heading">Hi! I'm Ala Rmida Electrical Engineer student.
+                        </h1>
+                        <br/>
+                        <ul class="masthead-items">
+                            <a href="https://www.facebook.com/profile.php?id=100021789469513" target="_blank" class="masthead__link masthead__link--margin">facebook</a>
+
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Frmida-ala-05130817b%3Ffbclid%3DIwAR1dXb2fKBPELID5tBd6hv170aQOJuymF2iB5GWS80PP0Qzoyk9do-XFBy8&h=AT0qAaMAozFQf-k-IP0CNwsJ8LNrByqggU5aFqIRXUashO_LxUdnSuExwm5QrJPtnfI9BSjgojBfKChWhlxc8KDT2ySMvW_-yYe-0FQuBEAcrWWrqDoNkGlhxlUcoyW_TZOLkg"
+                                target="_blank" class="masthead__link masthead__link--margin">Linkedin</a>
+
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FRmida282%3Ftab%3Drepositories%26fbclid%3DIwAR31c9z4B4iwZsayPF59jjWrz0P7M9rxrIuqWXVfwmBnpj4RfQrAyvvHlx4&h=AT0qAaMAozFQf-k-IP0CNwsJ8LNrByqggU5aFqIRXUashO_LxUdnSuExwm5QrJPtnfI9BSjgojBfKChWhlxc8KDT2ySMvW_-yYe-0FQuBEAcrWWrqDoNkGlhxlUcoyW_TZOLkg"
+                                target="_blank" class="masthead__link masthead__link--margin">GitHub</a>
+
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Frmaidaala%2F%3Ffbclid%3DIwAR31c9z4B4iwZsayPF59jjWrz0P7M9rxrIuqWXVfwmBnpj4RfQrAyvvHlx4&h=AT0qAaMAozFQf-k-IP0CNwsJ8LNrByqggU5aFqIRXUashO_LxUdnSuExwm5QrJPtnfI9BSjgojBfKChWhlxc8KDT2ySMvW_-yYe-0FQuBEAcrWWrqDoNkGlhxlUcoyW_TZOLkg"
+                                target="_blank" class="masthead__link masthead__link--margin">Instagram</a>
+
+                            <a href="mailto:ala.rmida.ingen@gmail.com" target="_blank" class="masthead__link masthead__link--margin">E-mail</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="masthead-wave">
+        <div style="height: 16vh; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000;"></path></svg></div>
+    </div>
+
+
+    <section href="About"  id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="title">
+                        <h2 class="title__h2">About My Self </h2>
+                    </div>
+                    <div class="about-timeline">
+                        <div class="timeline-card">
+                            <div class="timeline-card-content">
+                                <p>&middot; I am an Eletrical Engineering Student at ENIM(National Engineering School of Monastir ) . I am 23 years old , i'm born and raised in Sfax, Tunisia, i taught my self almost every thing i know related to web development
+                                    , Graphic and motion designs , electrical and Embedded system.</p>
+                            </div>
+
+                            <div class="timeline-card-content timeline-card-content--p">
+                                <p>&middot; I make an effort every day to learn new technologies and apply them in my personal projects.</p>
+                            </div>
+
+                            <div class="timeline-card-content timeline-card-content--p">
+                                <p>&middot; Having my own company was a personal goal of mine that I m willing to work very hard to achieve.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-skills">
+                    <div class="title">
+                        <h2 class="title__h3">My Skills</h2>
+                    </div>
+                    <div class="about-timeline">
+                       
+                        <div class="skills-title">
+                            <h3 class="title__h3">Programming Languages</h3>
+                        </div>
+                        <div class="skills-content">
+                            <div class="skill">Python</div>
+                            <div class="skill">C/C++</div>
+                            <div class="skill">Shell linux </div>
+                            <div class="skill">java script</div>
+                            <div class="skill">My SQL</div>
+                            <div class="skill">Html(Hyper Text Markup Language) </div>
+                            <div class="skill">CSS(Cascading Style Sheets)</div>
+
+                        </div>
+                      
+                        <div class="skills-title">
+                            <h3 class="title__h3">Operating System</h3>
+                        </div>
+                        <div class="skills-content">
+                            <div class="skill">Linux/GNU ( Ubuntu 20.04.3 LTS  , Centos , Robot Operating System "ROS" </div>
+                         
+        
+                        </div>
+                        <div class="skills-title">
+                            <h3 class="title__h3">Networks </h3>
+                        </div>
+                        <div class="skills-content">
+                            <div class="skill">LAN </div>
+                            <div class="skill">WLAN</div>
+                            <div class="skill">TCP/IP</div>
+                        </div>
+                        <div class="skills-title ">
+
+                            <h3 class="title__h3">software & Tools </h3>
+
+                        </div>
+                        <div class="skills-content">
+                            <div class="skill">Matlab</div>
+                            <div class="skill">ModelSim</div>
+                            <div class="skill">Mplab</div>
+                            <div class="skill">Quartus</div>
+                            <div class="skill">ISIS</div>
+                            <div class="skill">SOLIDEWORKS </div>
+                            <div class="skill">VS Code </div>
+                            <div class="skill">Adobe Photoshop </div>
+                            <div class="skill">Adobe Pro </div>
+                            <div class="skill">Altium Designer </div>
+                            <div class="skill">Visual Studio /Visual Studio Code </div>
+                        </div>
+                        <div class="skills-title">
+                            <h3 class="title__h3">DevOps </h3>
+                        </div>
+                        <div class="skills-content">
+                            <div class="skill">Docker </div>
+                            <div class="skill">Kubernetes</div>
+                            <div class="skill">Gestion de version(Gitlab , Git) </div>
+                        </div>
+                        <div class="skills-title">
+                            <h3 class="title__h3">Languages</h3>
+                        </div>
+                        <div class="skills-content">
+                            <div class="skill">English</div>
+                            <div class="skill">French</div>
+                            <div class="skill">Arabic</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section href="Projects" id="projects" class="projects">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h2 class="title__h2"> My Projects </h2>
+                </div>
+            </div>
+            <div class="row row--projects">
+                <div class="col col--project">
+                    <div class="project-card">
+                        <div class="project-card-content">
+                            <div class="project-card-cover">
+                                <a href="" target="_blank" class="fas fa-globe fa-2x project__icon"></a>
+                            </div>
+                            <div class="project_image">
+                            <img src="\IMAGE\smart.jpg" alt="Customer image" class="project_image" width="200" 
+                            height="100"/>
+                            </div>
+                            <h3 class="title__h3 title__h3--project">Smart Home</h3>
+                            <div class="project-card-p">For this project I was inspired by the smart home devices , using raspberry pi 3 model B , electronics components and Python language programming. It was a beatiful challenge for me.
+                            </div>
+                        </div>
+                        <div class="skills-content skills-content--project">
+                            <div class="skill skill--project">Raspberrypi 3B</div>
+                            <div class="skill skill--project">Python</div>
+                            <div class="skill skill--project">GitHub </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col col--project">
+                    <div class="project-card">
+                        <div class="project-card-content">
+                            <div class="project-card-cover">
+                                <a target="_blank" class="fab fa-github fa-2x project__icon" href="https://github.com/Rmida282?tab"></a>
+
+                                <a target="_blank" class="fas fa-globe fa-2x project__icon" href=""></a>
+                            </div>
+                            <h3 class="title__h3 title__h3--project">Personal Website</h3>
+                            <div class="project-card-p">My first personal website, made with css and html. Use a minimal design and dark template for this site.
+                            </div>
+                        </div>
+                        <div class="skills-content skills-content--project">
+                            <div class="skill skill--project">HTML</div>
+                            <div class="skill skill--project">CSS</div>
+                            <div class="skill skill--project">GitHub </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col col--project">
+                    <div class="project-card">
+                        <div class="project-card-content">
+                            <div class="project-card-cover">
+                                <a target="_blank" class="fab fa-github fa-2x project__icon" href="https://github.com/Rmida282?tab"></a>
+
+                                <a target="_blank" class="fas fa-globe fa-2x project__icon" href=""></a>
+                            </div>
+                            <h3 class="title__h3 title__h3--project">Smart Irrigation System & Weather Station</h3>
+                            <div class="project-card-p"> Smart irrigation system 
+                            </div>
+                        </div>
+                        <div class="skills-content skills-content--project">
+                             <div class="skill skill--project">Html</div>
+                             <div class="skill skill--project">CSS</div>
+                             <div class="skill skill--project">PHP</div>
+                             <div class="skill skill--project">MySQL</div>
+                             <div class="skill skill--project">ESP32</div>
+                             <div class="skill skill--project">C embarqué</div>
+                             <div class="skill skill--project">GitHub </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col col--project">
+                    <div class="project-card">
+                        <div class="project-card-content">
+                            <div class="project-card-cover">
+                                <a target="_blank" class="fab fa-github fa-2x project__icon" href="https://github.com/Rmida282?tab"></a>
+
+                                <a target="_blank" class="fas fa-globe fa-2x project__icon" href=""></a>
+                            </div>
+                            <h3 class="title__h3 title__h3--project">Design and realization of a stratospheric balloon</h3>
+                            <div class="project-card-p"> Scouting part
+                            </div>
+                        </div>
+                        <div class="skills-content skills-content--project">
+                             <div class="skill skill--project">theoretical study</div>
+                             <div class="skill skill--project">sensor calibration</div>
+                             <div class="skill skill--project">choice of acquisition modules</div>
+                        
+
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    <section class="py-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div>
+                <div>
+                  <h2 style=" font-size: x-large; color: aqua;"><span class="font-w-4 d-block">Swing by for a cup of coffee, or leave us a message:</span> </h2>
+                  <p class="lead">Get in touch and let us know how we can help.</p>
+                </div>
+                <form id="contact-form" class="row" method="post"  href="mailto:ala.rmida.ingen@gmail.com">
+                  <div class="messages"></div>
+                  <div class="form-group col-md-6">
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="First Name" required="required" data-error="Name is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input id="form_name1" type="text" name="name" class="form-control" placeholder="Last Name" required="required" data-error="Name is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Phone" required="required" data-error="Phone is required">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <select class="form-control">
+                      <option>- Select Service</option>
+                      <option>Consulting</option>
+                      <option>Finance</option>
+                      <option>Marketing</option>
+                      <option>Avanced Analytics</option>
+                      <option>planning</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input id="form_subject" type="tel" name="subject" class="form-control" placeholder="Subject" required="required" data-error="Subject is required">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <textarea id="form_message" name="message" class="form-control h-auto" placeholder="Message" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="col mt-4">
+                    <button class="btn btn-primary">Send Messages</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+              <div class="map h-100">
+                <iframe class="w-100 h-100 border-0" src="https://www.google.com/maps/@35.7661904,10.8041972,16z" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-----<footer id="Contact">
+        <div class="container container-main">
+        <h3 class="section-title Scroll-reveal" style="  font-size: medium;">Contact Us </h3>
+        <div class="row">
+        <div class="col-md-6 contact-form Scroll-reveal">
+        <form action="/websites/index.php" method="post" id="contact-form" class="needs-validation" novalidate>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Tap your name">
+        <input type="text" class="form-control" id="firmname" name="firmname" placeholder="family name">
+        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail*" required>
+        <div class="invalid-feedback">Please enter a valid email</div>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="phone number " onkeypress="if (!window.__cfRLUnblockHandlers) return false; return isNumberKey(event)" data-cf-modified-264b1126579e88cd31ab12f6-="">
+        <textarea class="text-control" id="message" name="message" rows="3" placeholder="How can we help? "></textarea>
+        <div class="form-check">
+        <label class="control control--checkbox" style="pointer-events:none;">I consent to the use of my entered data to process my request *.
+        <input style="pointer-events:auto;" id="invalidCheck" type="checkbox" required />
+        <div style="pointer-events:auto; cursor:pointer;" class="control__indicator"></div>
+        <div class="invalid-feedback">This field is required.</div>
+        </label>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6LclkZocAAAAANvtiFY32I8LxxZsflrzkcFIG18S" style="margin-top:15px;" data-callback="recaptcha_callback"></div>
+        <div class="recaptcha-invalid-feedback" style="color: aliceblue;" >Please check the ReCaptcha field</div>
+        <div class="btn-wrapper"><button name="send" class="custom-btn" type="submit" value="submit" id="submitbtn" href="mailto:ala.rmida.ingen@gmail.com">submit</button></div>
+        </form>
+        
+        
+        </div>
+        <div class="col-md-6 contact-details Scroll-reveal">
+        <div class="contact-card">
+        <div class="contact-image">
+        <img style="width: 30%; position:relative ;" src="IMAGE/ma_photo.jpg" alt="ala">
+        </div>
+        <div class="contact-info">
+        <div class="contact-name">Ala Rmida</div>
+        <div class="contact-position">Electrical Engineer student </div>
+        <div class="contact-mail"><a class="custom-links-2" href="mailto:ala.rmida.ingen@gmail.com">ala.rmida.ingen@gmail.com</a></div>
+        <div class="contact-phone"><a class="custom-links-2" href="tel:+21653230717">+21653230717</a></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>---->
+  <!---- <div class="page-contenet">
+    <section class="Contact-us">
+        <div style="text-align:center">
+            <h2 style="font-size: 30px; color: aliceblue; "  >Contact Us</h2>
+            <p style="color: whitesmoke ; font-size: 20px;">Swing by for a cup of coffee, or leave us a message:</p>
+          </div>
+          <div class="row row--contact" >
+            <div class="column column--contact ">
+                <container class="image">
+                    <img src="IMAGE/ma_photo.jpg" style="width:30%" aria-posinset="">
+                </container>
+              
+            </div>
+            <div class="column column--action">
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                  <option value="Tunisia">Tunisia</option>
+                  <option value="Algérie">Algérie</option>
+                  <option value="Maroc">Maroc</option>
+                  <option value="Moritanya">Moritanya</option>
+                  <option value="Iraq">Iraq</option>
+                  <option value="pelastine">Pelastine</option>
+                  <option value="uk">UK</option>
+                  <option value="Itali ">Itali</option>
+                  <option value="german">German</option>
+                  <option value="swisse">Swisse</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+
+    </section>---->
+   </div>
+    
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="masthead-items">
+                <a href="https://www.facebook.com/profile.php?id=100021789469513" target="_blank" class="masthead__link masthead__link--margin">facebook</a>
+
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Frmaidaala%2F%3Ffbclid%3DIwAR3PsPRFC3k0ohJH42atbln33pK_MglEa-LStM4sSWFK5fKnvQQlQ62_Xe4&h=AT0qAaMAozFQf-k-IP0CNwsJ8LNrByqggU5aFqIRXUashO_LxUdnSuExwm5QrJPtnfI9BSjgojBfKChWhlxc8KDT2ySMvW_-yYe-0FQuBEAcrWWrqDoNkGlhxlUcoyW_TZOLkg"
+                    target="_blank" class="masthead__link masthead__link--margin">Instagram</a>
+
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FRmida282%3Ftab%3Drepositories%26fbclid%3DIwAR31c9z4B4iwZsayPF59jjWrz0P7M9rxrIuqWXVfwmBnpj4RfQrAyvvHlx4&h=AT0qAaMAozFQf-k-IP0CNwsJ8LNrByqggU5aFqIRXUashO_LxUdnSuExwm5QrJPtnfI9BSjgojBfKChWhlxc8KDT2ySMvW_-yYe-0FQuBEAcrWWrqDoNkGlhxlUcoyW_TZOLkg"
+                    target="_blank" class="masthead__link masthead__link--margin">GitHub</a>
+
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Frmida-ala-05130817b%3Ffbclid%3DIwAR0qkdmnQYbYxo_maVe0I7CHfaJoDtXnQlxtuIgGAH55mjXpKpTe2wdC59s&h=AT0qAaMAozFQf-k-IP0CNwsJ8LNrByqggU5aFqIRXUashO_LxUdnSuExwm5QrJPtnfI9BSjgojBfKChWhlxc8KDT2ySMvW_-yYe-0FQuBEAcrWWrqDoNkGlhxlUcoyW_TZOLkg"
+                    target="_blank" class="masthead__link masthead__link--margin">Linkedin</a>
+
+                <a href="mailto:ala.rmida.ingen@gmail.com" target="_blank" class="masthead__link masthead__link--margin">E-mail</a>
+            </ul>
+            <p class="footer__copy">
+                &copy; 2021 Rmida Ala - <a href="" target="_blank" class="project__icon project__icon--link">Contact</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
